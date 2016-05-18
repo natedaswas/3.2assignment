@@ -34,6 +34,9 @@ class sequence
       //bam heres the array of doubles
       //AHHHHHHH
         value_type data[CAPACITY];
+        //used keeps track of how many spaces are currently being used
         size_type used;
+        //current_index will increment to be the spot of the last item in sequence
         size_type current_index;
 };
+
