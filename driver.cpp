@@ -5,14 +5,14 @@
 #include <cstdlib>      // Provides EXIT_SUCCESS
 #include "main.cpp"  // With value_type defined as double
 using namespace std;
-
+//using namespace main_savitch_3;
 // PROTOTYPES for functions used by this test program:
 void print_menu( );
 // Postcondition: A menu of choices for this program has been written to cout.
 
 char get_user_command( );
 // Postcondition: The user has been prompted to enter a one character command.
-// The next character has been read (skipping blanks and newline characters), 
+// The next character has been read (skipping blanks and newline characters),
 // and this character has been returned.
 
 void show_sequence(sequence display);
@@ -27,7 +27,7 @@ int main( )
 {
     sequence test; // A sequence that we’ll perform tests on
     char choice;   // A command character entered by the user
-    
+
     cout << "I have initialized an empty sequence of real numbers." << endl;
 
     do
@@ -42,7 +42,7 @@ int main( )
                       break;
             case '?': if (test.is_item( ))
                           cout << "There is an item." << endl;
-                      else 
+                      else
                           cout << "There is no current item." << endl;
                       break;
             case 'C': if (test.is_item( ))
@@ -60,7 +60,7 @@ int main( )
                       break;
             case 'R': test.remove_current( );
                       cout << "The current item has been removed." << endl;
-                      break;     
+                      break;
             case 'Q': cout << "Ridicule is the best test of truth." << endl;
                       break;
             default:  cout << choice << " is invalid." << endl;
@@ -110,7 +110,7 @@ double get_number( )
 // Library facilities used: iostream
 {
     double result;
-    
+
     cout << "Please enter a real number for the sequence: ";
     cin  >> result;
     cout << result << " has been read." << endl;

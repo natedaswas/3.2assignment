@@ -10,7 +10,6 @@
 #include <cstdlib>  // Provides size_t
 using namespace std;
 
-int doAllTheThings();
 
 class sequence
 {
@@ -42,4 +41,3 @@ class sequence
         //current_index will increment to be the spot of the last item in sequence
         size_type current_index;
 };
-
